@@ -12,6 +12,10 @@ module.exports = {
         "quotes": [
             "error",
             "double"
+        ],
+         "semi": [
+            "error",
+            "never"
         ]
     }
 }

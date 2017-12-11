@@ -1,19 +1,22 @@
-const Promise = require("bluebird");
-var readFile = Promise.promisify(require("fs").readFile);
+const Promise = require("bluebird")
+var readFile = Promise.promisify(require("fs").readFile)
 
 // 使用Promise
-function usePromise() {
-	readFile("a.txt", "utf8")
-	.then(a => {
-		console.log(a);
-	})
+function usePromise()
+{
+    readFile("b.txt", "utf8")
+        .then(b =>
+        {
+            console.log(b)
+        })
 }
 
 // 使用Async/Await
-async function useAsyncAwait() {
-	var a = await readFile("a.txt", "utf8");
-	console.log(a);
+async function useAsyncAwait()
+{
+    var b = await readFile("b.txt", "utf8")
+    console.log(b) // 输出"Fundebug!"
 }
 
-usePromise();
-useAsyncAwait();
+usePromise()
+useAsyncAwait()
