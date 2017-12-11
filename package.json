@@ -1,0 +1,14 @@
+{
+  "name": "promise-asyncawait",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test01a.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Fundebug",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.5.1"
+  }
+}
